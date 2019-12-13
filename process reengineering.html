@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>业务流程再造</title>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+        
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        
+        
+    </head>
+    <body class="vscode-light">
+        <h1 id="%e4%b8%9a%e5%8a%a1%e6%b5%81%e7%a8%8b%e5%86%8d%e9%80%a0">业务流程再造</h1>
+<p>Editor: Yingheng Wang</p>
+<!-- TOC -->
+<ul>
+<li><a href="#%E4%B8%9A%E5%8A%A1%E6%B5%81%E7%A8%8B%E5%86%8D%E9%80%A0">业务流程再造</a>
+<ul>
+<li><a href="#%E4%B8%9A%E5%8A%A1%E6%B5%81%E7%A8%8B%E5%86%8D%E9%80%A0%E7%9A%84%E5%AE%9A%E4%B9%89">业务流程再造的定义</a></li>
+<li><a href="#%E4%B8%9A%E5%8A%A1%E6%B5%81%E7%A8%8B%E5%86%8D%E9%80%A0%E7%9A%84%E6%AD%A5%E9%AA%A4">业务流程再造的步骤</a>
+<ul>
+<li><a href="#%E6%AD%A5%E9%AA%A4%E4%B8%80%E8%AF%86%E5%88%AB%E5%92%8C%E4%BC%A0%E8%BE%BE%E5%8F%98%E6%9B%B4%E9%9C%80%E6%B1%82">步骤一、识别和传达变更需求</a>
+<ul>
+<li><a href="#organization-wide-change%E7%BB%84%E7%BB%87%E8%8C%83%E5%9B%B4%E7%9A%84%E5%8F%98%E6%9B%B4"><em><strong>Organization-Wide Change(组织范围的变更)</strong></em></a>
+<ul>
+<li><a href="#mckinsey-7-s-model"><em><strong>McKinsey 7-S Model</strong></em></a></li>
+<li><a href="#lewins-change-management-modellewins%E4%BC%81%E4%B8%9A%E5%8F%98%E6%9B%B4%E6%A8%A1%E5%9E%8B"><em><strong>Lewin’s Change Management Model(Lewin's企业变更模型)</strong></em></a></li>
+</ul>
+</li>
+<li><a href="#bottom-up-approach"><em><strong>Bottom-Up Approach</strong></em></a>
+<ul>
+<li><a href="#adkar%E6%A8%A1%E5%9E%8B"><em><strong>ADKAR模型</strong></em></a></li>
+<li><a href="#deming-cyclepdca"><em><strong>Deming Cycle(PDCA)</strong></em></a></li>
+</ul>
+</li>
+<li><a href="#employee-focused-approach"><em><strong>Employee-focused Approach</strong></em></a>
+<ul>
+<li><a href="#kotter%E7%9A%848%E6%AD%A5%E5%8F%98%E6%9B%B4%E6%A8%A1%E5%9E%8B"><em><strong>Kotter的8步变更模型</strong></em></a></li>
+<li><a href="#bridges-transition-model"><em><strong>Bridges Transition Model</strong></em></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E6%AD%A5%E9%AA%A4%E4%BA%8C%E7%BB%84%E5%BB%BA%E4%B8%93%E5%AE%B6%E5%9B%A2%E9%98%9F">步骤二、组建专家团队</a></li>
+<li><a href="#%E6%AD%A5%E9%AA%A4%E4%B8%89%E6%89%BE%E5%88%B0%E6%95%88%E7%8E%87%E4%BD%8E%E4%B8%8B%E7%9A%84%E6%B5%81%E7%A8%8B%E5%B9%B6%E5%AE%9A%E4%B9%89%E5%85%B3%E9%94%AE%E7%BB%A9%E6%95%88%E6%8C%87%E6%A0%87kpi">步骤三、找到效率低下的流程并定义关键绩效指标（KPI）</a></li>
+<li><a href="#%E6%AD%A5%E9%AA%A4%E5%9B%9B%E9%87%8D%E6%96%B0%E8%AE%BE%E8%AE%A1%E6%B5%81%E7%A8%8B%E5%B9%B6%E6%AF%94%E8%BE%83kpi">步骤四、重新设计流程并比较KPI</a></li>
+<li><a href="#bpr-example-ford-motors">BPR example: Ford Motors</a></li>
+</ul>
+</li>
+<li><a href="#%E5%85%B6%E4%BB%96%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE">其他参考文献</a></li>
+</ul>
+</li>
+</ul>
+<!-- /TOC -->
+<h2 id="%e4%b8%9a%e5%8a%a1%e6%b5%81%e7%a8%8b%e5%86%8d%e9%80%a0%e7%9a%84%e5%ae%9a%e4%b9%89">业务流程再造的定义</h2>
+<p><strong>业务流程再造</strong>是为了提高产品产量，质量或降低成本而重新创建核心业务流程的行为。
+业务流程再造的概念来源于 <a href="https://hbr.org/1990/07/reengineering-work-dont-automate-obliterate">Reengineering Work: Don’t Automate, Obliterate ,M Hammer - Harvard business review, 1990</a>。
+这篇文章的立场是，太多的企业正在使用新技术来使根本是无效的流程自动化，而不是创建与众不同的，基于新技术的事物。</p>
+<h2 id="%e4%b8%9a%e5%8a%a1%e6%b5%81%e7%a8%8b%e5%86%8d%e9%80%a0%e7%9a%84%e6%ad%a5%e9%aa%a4">业务流程再造的步骤</h2>
+<p>业务流程再造可概括为四步，由下图所示：</p>
+<p><img src="https://www.conceptdraw.com/How-To-Guide/picture/bpr-diagram.png" alt="4-steps-flowchart" title="4-steps-flowchart"></p>
+<p>更加细分的流程再造步骤如下图所示：</p>
+<p><img src="https://www.researchgate.net/profile/Masoud_Yaghini/publication/257715838/figure/fig1/AS:669000396709893@1536513532529/Steps-and-tasks-of-the-implemented-BPR-framework.png" alt="4-steps-flowchart" title="4-steps-flowchart"></p>
+<h3 id="%e6%ad%a5%e9%aa%a4%e4%b8%80%e8%af%86%e5%88%ab%e5%92%8c%e4%bc%a0%e8%be%be%e5%8f%98%e6%9b%b4%e9%9c%80%e6%b1%82">步骤一、识别和传达变更需求</h3>
+<ul>
+<li>目的：说服管理层和员工为什么进行这样的变更对公司至关重要。</li>
+<li>难点：无论是管理层还是员工，总会有人对现状感到满意。前者可能会担心这是沉没的投资，后者可能会担心他们的工作安全。</li>
+<li>措施：制定一个非常全面的计划，让不同部门的领导参与其中。传达变革的宏伟愿景，表明变革将如何积极地影响到乃至最低层的员工。</li>
+</ul>
+<p>这里，有一些变更管理模型（change management models）可以选用：</p>
+<h4 id="organization-wide-change%e7%bb%84%e7%bb%87%e8%8c%83%e5%9b%b4%e7%9a%84%e5%8f%98%e6%9b%b4"><em><strong>Organization-Wide Change(组织范围的变更)</strong></em></h4>
+<p>这些模型是更宏观的。他们专注于确定整个公司范围内的潜在改进并加以实施。对于大型组织而言，它们是必不可少的，但对于中小型企业而言却不那么重要。</p>
+<h5 id="mckinsey-7-s-model"><em><strong>McKinsey 7-S Model</strong></em></h5>
+<blockquote>
+<p>该模型包含七个元素：战略、结构、系统、企业价值观、技能、企业性格、员工，并将其分为硬元素和软元素，如下表所示：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">硬元素</th>
+<th style="text-align:center">软元素</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">战略</td>
+<td style="text-align:center">企业价值观</td>
+</tr>
+<tr>
+<td style="text-align:center">结构</td>
+<td style="text-align:center">技能</td>
+</tr>
+<tr>
+<td style="text-align:center">系统</td>
+<td style="text-align:center">企业性格</td>
+</tr>
+<tr>
+<td style="text-align:center">-</td>
+<td style="text-align:center">员工</td>
+</tr>
+</tbody>
+</table>
+<p><img src="https://expertprogrammanagement.com/wp-content/uploads/2018/10/McKinsey-7S-Framework.png" alt="Mckinsey 7-S Model" title="7-S Model"></p>
+<p><strong>硬元素：</strong></p>
+<p>战略 –有关如何领先竞争的一般策略。</p>
+<p>结构 –公司的层次结构。谁负责谁。</p>
+<p>系统 –员工每天执行的任务和流程。思考，业务规则和流程。</p>
+<p><strong>软元素：</strong></p>
+<p>企业价值观 –公司的价值。与公司文化差不多</p>
+<p>技能 –员工的技能和核心能力</p>
+<p>企业性格 -公司使用的领导风格。思考，民主，放任等</p>
+<p>员工 –您的员工及其角色</p>
+<p>为了帮助自己创建模型，可以向自己和其他员工在每个元素上询问以下内容：</p>
+<p><strong>战略：</strong></p>
+<ul>
+<li>公司的短期和长期目标是什么？</li>
+<li>您是否在实现它们的正确方向上？有经验证明吗？</li>
+<li>您如何计划保持竞争力？</li>
+<li>公司是否紧跟最新趋势，技术发展等？</li>
+</ul>
+<p><strong>结构：</strong></p>
+<ul>
+<li>公司的层次结构是什么？</li>
+<li>决策如何处理？谁在说什么？在某些情况下，集中决策可以加快执行速度。另一方面，它也阻碍了创新和构想。</li>
+<li>不同部门如何协调？他们是如何组织和管理的？</li>
+<li>不同的团队如何协调？如何组织和管理？</li>
+<li>各个团队成员如何组织自己并相互协调？</li>
+<li>每个人如何交流？什么频率？</li>
+</ul>
+<p><strong>系统：</strong></p>
+<ul>
+<li>什么是使组织产生变化的核心系统？这几乎适用于从IT到营销的每个业务功能。</li>
+<li>是否执行了系统？即，您的员工是否遵守程序。</li>
+<li>谁来评估系统？监控效率高吗？</li>
+<li>监视和更改系统的频率？</li>
+</ul>
+<p><strong>企业价值观：</strong></p>
+<ul>
+<li>您的公司价值观是什么？</li>
+<li>您的团队价值观是什么？它们是否符合公司价值观？</li>
+<li>您的员工反映价值观吗？</li>
+</ul>
+<p><strong>企业性格：</strong></p>
+<ul>
+<li>全公司的领导风格是什么？</li>
+<li>它会因部门而异吗？</li>
+<li>领导风格有效吗？实际操作如何？</li>
+<li>经理们是否会按照高级管理人员的要求进行领导？</li>
+<li>贵公司是否具有竞争或合作文化？它会促进还是阻止增长？</li>
+</ul>
+<p><strong>员工：</strong></p>
+<ul>
+<li>公司目前雇用什么职位？</li>
+<li>您有什么核心竞争力？你缺什么吗？</li>
+<li>是否有任何职位需要填补？这些是什么？</li>
+</ul>
+<p><strong>技能：</strong></p>
+<ul>
+<li>您的公司最擅长什么？思考，物流，市场营销等</li>
+<li>您的员工具备哪些技能？</li>
+<li>他们有资格在工作中取得成功吗？</li>
+</ul>
+<p>如何使用该模型，请<a href="https://www.mindtools.com/pages/article/newSTR_91.htm">参考此处</a>。</p>
+</blockquote>
+<hr>
+<h5 id="lewins-change-management-modellewins%e4%bc%81%e4%b8%9a%e5%8f%98%e6%9b%b4%e6%a8%a1%e5%9e%8b"><em><strong>Lewin’s Change Management Model(Lewin's企业变更模型)</strong></em></h5>
+<blockquote>
+<p>7-S模型可以帮助确定要更改或改进的内容，而Lewin的变更管理模型可以帮助执行。
+该模型专门用于帮助进行大规模变更，这将严重影响组织的运作方式。如果想在团队，部门或流程范围内做一些更小的改变，则可以使用“Deming Cycle”。</p>
+<p>该模型由以下三步完成：</p>
+<ul>
+<li><strong>解冻</strong> –打破现状，让公司员工知道即将发生的变化，即在公司内部传达对变更的需求。</li>
+<li><strong>进行更改</strong> –您开始朝着新的方向迈进：使用新的工具，流程等。这是试验阶段，您在其中找出如何提高组织效率的方法。在这种情况下，您要做的就是更新文档或流程（对于BPMS），并使您的员工知道所做的更改。但是，无论何时对流程进行调整，都应始终征求员工的反馈。毕竟，他们是将执行新流程的人。如果在考虑到他们的反馈的情况下进行了更改，那么他们会感到自己更多地参与了您的计划，因此更有可能进行合作。</li>
+<li><strong>重新冻结</strong> –至此，您已经解决了问题。在重新冻结阶段，您将所有试验过的东西拿来并在公司范围内应用。为了确保您的员工接受变更，您应该激励他们。奖励任何跟上变化的人。或者，惩罚不这样做的人（取决于您的处理方式）。</li>
+</ul>
+<p><img src="https://www.process.st/wp-content/uploads/2017/07/change-management-strategy-lewins-change-model.png" alt="Lewin's Model" title="Lewin's"></p>
+<p>具体使用指南<a href="https://www.mindtools.com/pages/article/newPPM_94.htm">在此</a>, 另外<a href="https://www.sciencedirect.com/science/article/pii/S2444569X16300087/pdfft?md5=e951b5776735c617f8316662e9f5b4ed&amp;pid=1-s2.0-S2444569X16300087-main.pdf">这篇文章</a>详细阐释了Lewin's Change Management Model。</p>
+</blockquote>
+<hr>
+<h4 id="bottom-up-approach"><em><strong>Bottom-Up Approach</strong></em></h4>
+<p>这些方法更多地侧重于过程或面向目标的更改。</p>
+<h5 id="adkar%e6%a8%a1%e5%9e%8b"><em><strong>ADKAR模型</strong></em></h5>
+<blockquote>
+<p>ADKAR模型是一种关注变更背后的个体而不是变更本身的方法。它由Prosci的创始人Jeffrey Hiatt开发。该方法论是您需要实现的5个目标的集合。</p>
+<ol>
+<li><strong>意识</strong> -说服你的员工，有一个真正需要变革。</li>
+<li><strong>愿望</strong> –让您的员工亲自投资于计划并获得他们的支持。</li>
+<li><strong>知识</strong> –为员工配备正确的工具和知识，以帮助他们进行变革。</li>
+<li><strong>能力</strong> –使用获得的知识并将其应用到实践中的能力。</li>
+<li><strong>强化</strong> –实施确保您的员工遵守新常规的系统。</li>
+</ol>
+<p>ADKAR模型的基本用法<a href="https://tallyfy.com/adkar-model/">在此</a>，更多有关AKDAR应用的文档可以从<a href="https://github.com/isjakewong/NIO_DuplicateChecking/tree/master/AKDAR_Applications">这里</a>找到并下载。</p>
+<p><img src="https://www.prosci.com/hubfs/3.images/web-page/applying-adkar/states-of-change-illustration.svg" alt="States of change" title="States of change">
+<img src="https://d2slcw3kip6qmk.cloudfront.net/marketing/blog/2019Q3/adkar-model/adkar-change-model-overview.png" alt="ADKAR Model" title="ADKAR Model"></p>
+</blockquote>
+<hr>
+<h5 id="deming-cyclepdca"><em><strong>Deming Cycle(PDCA)</strong></em></h5>
+<blockquote>
+<p>戴明循环，也称为计划-执行-检查-行动周期，是一种改进过程的方法。
+该PDCA循环分为4个阶段，可以帮助您分析并提高单过程完美。但是，此模型不是一次性的。这更多的是循环-您将其重复用于单个过程，直到其性能达到最佳状态为止。</p>
+<ul>
+<li><strong>计划</strong> –确定流程效率低下的地方。提出潜在的改进或解决方案。</li>
+<li><strong>试验</strong> –小范围地实施更改。除非您确定新流程比旧流程效果更好，否则如果在整个公司范围内使用，都太冒险了。</li>
+<li><strong>检查</strong> -基准化您的改进。新流程的性能是否比旧流程好？从长远来看会很好吗？</li>
+<li><strong>行动</strong> –如果您提出的更改最终失败了，那么您可以回到计划阶段，然后重新开始整个过程​​。否则，请扩大规模并在每个部门开始使用它。</li>
+</ul>
+<p><img src="https://tallyfy.com/wp-content/uploads/2018/02/Deming_PDCA_cycle.png" alt="Deming Cycle" title="Deming Cycle"></p>
+<p>在变更管理的上下文中，您可以使用“戴明周期”来优化组织中经常使用的流程。一旦您自己完善了流程，就可以在整个公司范围内进行扩展和应用。
+但是，这是PDCA的主要用例。如果您打算执行与组织而不是其流程有更多关系的重大变更，那么最好使用Lewin的变更管理模型或McKinsey的7-S。</p>
+</blockquote>
+<hr>
+<h4 id="employee-focused-approach"><em><strong>Employee-focused Approach</strong></em></h4>
+<p>归根结底，您的员工将对您的变革计划产生重大影响，因此这些变更管理模型侧重于赢得公司员工的支持，而不是关注于变更本身。</p>
+<h5 id="kotter%e7%9a%848%e6%ad%a5%e5%8f%98%e6%9b%b4%e6%a8%a1%e5%9e%8b"><em><strong>Kotter的8步变更模型</strong></em></h5>
+<blockquote>
+<p>Kotter的模型在某种程度上类似于ADKAR，该模型将员工放在首位。但是，区别在于它是自上而下的。与其赢得个人雇员的支持，不如将其重点放在获得宏观认可上。这8个步骤分别是：</p>
+<ul>
+<li>营造紧迫感</li>
+<li>建立变革团队</li>
+<li>制定愿景</li>
+<li>传达愿景</li>
+<li>消除改变的障碍</li>
+<li>创造短期胜利</li>
+<li>保持动力</li>
+<li>建立新的现状</li>
+</ul>
+<p>关于八个步骤的详细解释，请参考<a href="https://tallyfy.com/kotters-8-step-change-model/">kotters-8-step-change-model</a></p>
+</blockquote>
+<hr>
+<h5 id="bridges-transition-model"><em><strong>Bridges Transition Model</strong></em></h5>
+<blockquote>
+<p>与其他变更管理模型不同，Bridges的方法专门处理员工对变更的情感反应，而不是处理变更的策略。</p>
+<p>这就是为什么它是“过渡”模型而不是变革模型的原因。“改变”一词意味着无论人们如何看待，这都是即将发生的事情。另一方面，过渡是您的员工在变革计划中所经历的。该模型将为您提供所需的知识，以帮助您在变化和混乱中从情感上指导员工。</p>
+<p>因此，虽然过渡模型非常有用且很有见识，但您不能独立使用它。相反，最好是在主要变更方法之上使用它作为获得认可的一种方法。</p>
+<p>过渡模型分为三个阶段，每个阶段都是您员工的一种情感反应:</p>
+<ol>
+<li><strong>结束和失去</strong> -毫无疑问，您会看到来自不同员工的各种情绪–恐惧，恐慌，混乱等。克服这一阶段的唯一方法是通过沟通。对于您的大多数员工而言，恐惧是完全没有根据的。说服他们您所做的事情对公司有利，他们应该感到安全。每当您遇到问题或批评时，请解决他们的疑虑并帮助他们了解变革计划的积极性。由于您只是一个人，因此拥有一群变革倡导者可以帮助您进一步传达信息。</li>
+<li><strong>中立区</strong> -在这一点上，您的员工对计划更“中立”，而不是恐惧或害怕。新的过程或方法正在开发并付诸实践，但还没有确定下来。员工不确定自己应该做什么，并且正在进行很多实验。由于存在所有不确定性，您的员工可能会对变革计划持怀疑态度。在此阶段，重要的是要不断激励员工。向他们展示短期胜利，建立对一切都按计划进行的信心，您很快就会达到下一阶段。</li>
+<li><strong>新起点</strong> -在此阶段，您的员工开始了解一切如何解决。他们已经了解了该计划如何对公司有利，以及他们在新公司方向上的作用。这将使您的员工比以往更有动力，帮助您将变更管理计划推向最终阶段。不过，您应该确保这种情况持续存在。尽力而为的员工应该得到奖励和认可，为其他人树立榜样。
+这里是<a href="https://tallyfy.com/bridges-transition-model/">Bridges Transition Model</a>的完整使用指南</li>
+</ol>
+</blockquote>
+<hr>
+<p>以上是所有的变更管理模型，您可以选择在不同的情况下使用某一种模型或者将几种变更管理模型结合起来一起使用。</p>
+<h3 id="%e6%ad%a5%e9%aa%a4%e4%ba%8c%e7%bb%84%e5%bb%ba%e4%b8%93%e5%ae%b6%e5%9b%a2%e9%98%9f">步骤二、组建专家团队</h3>
+<p>与任何其他项目一样，业务流程再造也需要一支技术精湛，积极进取的团队来执行所需的步骤。</p>
+<p>在大多数情况下，团队包括：</p>
+<ul>
+<li><strong>高级经理</strong>：在进行重大更改时，您需要有一位能做主的人的监督。如果BPR团队没有高级管理人员的参与，则每一次微小的变化都必须与他们保持联系。</li>
+<li><strong>运营经理</strong>：毫无疑问，您需要一个了解流程内幕的人，这就是运营经理的职责所在。他们了解流程，并可以利用其丰富的知识做出贡献。</li>
+<li><strong>再造专家</strong>：最后，您需要合适的工程师。重新设计流程可能需要许多不同领域的专业知识，从IT到制造。尽管通常情况会有所不同，但正确的更改可能是任何内容-硬件，软件，工作流程等。</li>
+</ul>
+<p>失败的风险：</p>
+<ul>
+<li>如果团队由观点和议程相似的人员组成，则他们可能无法正确诊断问题/解决方案。</li>
+<li>团队可能涉及太多或更少的人。在前者的情况下，由于观点冲突，决策速度可能会放慢；对于后者，在某些领域可能没有足够的专家来创建适当的解决方案。</li>
+</ul>
+<h3 id="%e6%ad%a5%e9%aa%a4%e4%b8%89%e6%89%be%e5%88%b0%e6%95%88%e7%8e%87%e4%bd%8e%e4%b8%8b%e7%9a%84%e6%b5%81%e7%a8%8b%e5%b9%b6%e5%ae%9a%e4%b9%89%e5%85%b3%e9%94%ae%e7%bb%a9%e6%95%88%e6%8c%87%e6%a0%87kpi">步骤三、找到效率低下的流程并定义关键绩效指标（KPI）</h3>
+<p>尽管KPI通常根据您要优化的过程而有所不同，但以下情况可能非常典型：</p>
+<blockquote>
+<p><strong>制造业</strong>：</p>
+<ul>
+<li><strong>周期时间</strong> –从流程开始到结束所花费的时间</li>
+<li><strong>转换时间</strong> –生产线从生产一种产品切换到另一种产品所需的时间</li>
+<li><strong>缺陷率</strong> –制造缺陷产品的百分比</li>
+<li><strong>库存周转</strong> –生产线将库存转化为产品需要多长时间</li>
+<li><strong>计划VS紧急维护</strong> –计划维护与紧急维护发生次数的比例</li>
+</ul>
+<p><strong>IT</strong>:</p>
+<ul>
+<li><strong>平均修复时间</strong> –紧急情况后修复系统/软件/应用所需的平均时间</li>
+<li><strong>支持工单关闭率</strong> –支持团队关闭的工单数量除以打开数量</li>
+<li><strong>应用开发</strong> –从头开始全面开发新应用程序所需的时间</li>
+<li><strong>周期时间</strong> –安全漏洞后恢复网络所需的时间</li>
+</ul>
+<p>一旦定义了确切的KPI，就需要遵循各个流程。最简单的方法是进行<a href="https://tallyfy.com/business-process-mapping">业务流程映射</a>。虽然很难将流程作为一个概念进行分析，但是如果逐步将所有内容写下来，则要容易得多。</p>
+</blockquote>
+<h3 id="%e6%ad%a5%e9%aa%a4%e5%9b%9b%e9%87%8d%e6%96%b0%e8%ae%be%e8%ae%a1%e6%b5%81%e7%a8%8b%e5%b9%b6%e6%af%94%e8%be%83kpi">步骤四、重新设计流程并比较KPI</h3>
+<p>最后，一旦完成所有分析和计划，就可以开始小规模实施解决方案和变更。</p>
+<p>一旦达到这一点，就没有什么可添加的了，现在您要做的就是继续将您的理论付诸实践，看看KPI如何保持。</p>
+<p>如果KPI显示新解决方案效果更好，则可以开始缓慢扩展解决方案，并在越来越多的公司流程中将其付诸实践。</p>
+<p>如果没有，请返回并开始制定新的潜在解决方案。</p>
+<h3 id="bpr-example-ford-motors">BPR example: Ford Motors</h3>
+<p>在1980年代，美国汽车工业处于萧条时期，为了削减成本，福特决定对部分部门进行审查，以寻找效率低下的流程。</p>
+<p>他们的发现之一是应付账款部门效率不如预期：他们的应付账款部门由500人组成，而马自达的该部门却只有5人。</p>
+<p>尽管马自达是一家较小的公司，但福特公司估计按照其公司该部门的人数来计算，马自达公司该部门人数应为25人，是原先的5倍。</p>
+<p>因此，福特管理层为自己设定了一个可量化的目标：减少应付账款部门数百名员工。然后，他们启动了业务流程再造计划，以弄清为什么部门人员过多。</p>
+<p>他们分析了当前系统，发现它的工作方式如下：</p>
+<ol>
+<li>当采购部门编写采购订单时，他们将副本发送到应付帐款部。</li>
+<li>然后，物料控制部将接收货物，并将相关凭证的副本发送到应付账款部。</li>
+<li>同时，卖方会将收货收据发送到应付账款部。</li>
+</ol>
+<p>然后，应付帐款部门的业务员必须匹配这三个订单，如果匹配，他或她将发出付款。当然，这个过程需要部门中的大量人力。</p>
+<p><img src="https://tallyfy.com/wp-content/uploads/2017/06/Ford-Old.jpg" alt="旧的应付流程"></p>
+<p>因此，根据BPR，福特完全以数字方式重新创建了流程。</p>
+<ol>
+<li>采购部发出订单并将其输入在线数据库中。</li>
+<li>物料控制部接收货物并与数据库进行交叉引用，以确保其与订单匹配。</li>
+<li>如果存在匹配项，则物料控制部将在计算机上接受订单。</li>
+</ol>
+<p><img src="https://tallyfy.com/wp-content/uploads/2017/06/New-Ford-.jpg" alt="新的应付流程"></p>
+<p>这样，完全消除了需要应付帐款文员来匹配订单的情况。该案例的<a href="http://ccscjournal.willmitchell.info/Vol9-93/No5/Yong%20Liang.pdf">详细情况</a>。</p>
+<hr>
+<h2 id="%e5%85%b6%e4%bb%96%e5%8f%82%e8%80%83%e6%96%87%e7%8c%ae">其他参考文献</h2>
+<p>德国亚琛工业大学关于BPR的<a href="http://academics.epu.ntua.gr/LinkClick.aspx?fileticket=0NK86a2TiJk%3D&amp;tabid=940&amp;mid=2329">讲义</a></p>
+<p>百度百科中将不同学者对于BPR建立的模型做了归纳汇总，已经非常精炼了，可以直接参考<a href="https://baike.baidu.com/item/%E6%B5%81%E7%A8%8B%E5%86%8D%E9%80%A0/11004038?fr=aladdin">其中的内容</a>。</p>
+
+    </body>
+    </html>
